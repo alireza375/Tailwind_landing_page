@@ -37,7 +37,9 @@ body {
     position: relative;
 }
 
-.hamburger-top, .hamburger-middule, .hamburger-bottom {
+.hamburger-top, 
+.hamburger-middule, 
+.hamburger-bottom {
     position: absolute;
     top: 0;
     left: 0;
@@ -45,7 +47,7 @@ body {
     height: 2px;
     background: #000;
     transform: rotate(0);
-    transition: all 0.5s
+    transition: all 0.5s;
 }
 
 .hamburger-middle {
@@ -62,16 +64,13 @@ body {
 }
 
 .open .hamburger-top {
-    transform: rotate(45 deg), traslateY(6 px), translate(6px);
-
+    transform: rotate(45 deg), traslateY(6 px), translate(6 px);
 }
 
 .open .hamburger-middle {
     display:none;
 }
 
-
-.open .hamburger-buttom {
-    transform: traslateY(14 px);
-
+.open .hamburger-bottom {
+    transform: rotate(-45 deg), traslateY(6 px), translate(-6 px);
 }
